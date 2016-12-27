@@ -32,12 +32,12 @@ def cleanup(to_clean, searchfield):
     cleanstr = cleanstr.rstrip("\n")
     cleanstr = cleanstr.rstrip()
     cleanstr = cleanstr.lstrip()
-    return cleanstr;
+    return cleanstr
 
 
 def get_odoo_country_id(_country):
     _country = _country.upper()
-    _country = unicode(_country,"utf-8")
+    _country = unicode(_country, "utf-8")
     _odoo_country_id = 0
     if _country == u'ANDORRA, PRINCIPALITY OF' or _country == u'FÜRSTENTUM ANDORRA' or _country == u'AD':
         _odoo_country_id = 1
